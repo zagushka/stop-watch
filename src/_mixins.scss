@@ -1,0 +1,16 @@
+@mixin digital-clock($color: black, $backgroundColor: white) {
+  display: inline-block;
+  font-family: 'digital', 'arial', sans-serif;
+  position: relative;
+  color: $color;
+  z-index: 1;
+
+  &:after {
+    content: '88:88.88';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: $backgroundColor
+  }
+}
