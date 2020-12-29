@@ -4,12 +4,31 @@
   @include digital-clock(white, #444444);
   font-size: x-large;
 }
+
 .simple {
   text-align: left;
   list-style: none;
   padding-left: 0;
 
   li {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid #5e5e5e;
+    align-items: center;
+
+    .remove-btn {
+      padding: 2px 5px;
+      color: white;
+      background-color: red;
+      height: 100%;
+      border: 1px solid black;
+      border-radius: 2px;
+      cursor: pointer;
+      visibility: hidden;
+    }
+
+    &:hover > .remove-btn {
+      visibility: visible;
+    }
   }
 }

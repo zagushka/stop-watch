@@ -110,6 +110,13 @@ export class StopWatchService {
     this.resetState();
   }
 
+  public removeTime(index: number) {
+    // Remove element at index position
+    const removed = [...this.times];
+    removed.splice(index, 1);
+    this.setTimes(removed);
+  }
+
   public save() {
     // Save result to the list
     this.addTime({duration: this.getDuration()});

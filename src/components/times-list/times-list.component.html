@@ -1,5 +1,6 @@
 <ul class="simple">
-  <li *ngFor="let item of stopWatch.times">
+  <li *ngFor="let item of stopWatch.times; let i = index">
     <span class="small-digital">{{item.duration.toFormat('hh:mm.ss')}}</span>
+    <span class="remove-btn" (click)="remove(i)">REMOVE</span>
   </li>
 </ul>

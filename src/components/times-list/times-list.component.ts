@@ -9,4 +9,8 @@ import { StopWatchService } from '../../services/stop-watch.service';
 export class TimesListComponent {
   constructor(public stopWatch: StopWatchService) {
   }
+
+  remove(index) {
+    this.stopWatch.removeTime(index);
+  }
 }
