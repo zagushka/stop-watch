@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center" class="content">
+  <sw-digital-display [time]="duration"></sw-digital-display>
+  <div [ngSwitch]="stopWatch.clock.status">
+    <button *ngSwitchCase="'running'" (click)="stopWatch.pause()">Pause</button>
+    <button *ngSwitchDefault (click)="stopWatch.start()">Play</button>
+  </div>
+  <button (click)="stopWatch.save()">Save</button>
+  <button (click)="stopWatch.clear()">Clear</button>
+
+  <sw-times-list></sw-times-list>
+</div>
