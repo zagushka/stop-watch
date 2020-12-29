@@ -2,10 +2,11 @@
 .container {
   border-radius: 5px 5px 0 0;
   background-color: #242424;
+  box-shadow: 0 1px 2px 0 black inset;
 }
 
 .huge-digital {
-  @include digital-clock(chartreuse, darkolivegreen);
+  @include digital-clock(#7fd832, #344424);
   font-size: xxx-large;
 }
 

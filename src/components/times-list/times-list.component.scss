@@ -1,10 +1,15 @@
 @import "~src/mixins";
 
 .small-digital {
-  @include digital-clock(white, dimgray);
+  @include digital-clock(white, #444444);
   font-size: x-large;
 }
 .simple {
+  text-align: left;
   list-style: none;
   padding-left: 0;
+
+  li {
+    border-bottom: 1px solid #5e5e5e;
+  }
 }
