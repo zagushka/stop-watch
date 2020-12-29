@@ -4,6 +4,7 @@ import { DigitalDisplayComponent } from '../components/digital-display/digital-d
 import { TimesListComponent } from '../components/times-list/times-list.component';
 
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

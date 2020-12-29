@@ -1,6 +1,7 @@
 @import "~src/mixins";
 .container {
-  background: black;
+  border-radius: 5px 5px 0 0;
+  background-color: #242424;
 }
 
 .huge-digital {

@@ -1,0 +1,31 @@
+.content {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  :first-child {
+    border-radius: 0 0 0 5px;
+  }
+  :last-child {
+    border-radius: 0 0 5px 0;
+  }
+
+  .button {
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    flex-basis: 33%;
+    &.text {
+      flex-basis: 66%;
+    }
+  }
+}
