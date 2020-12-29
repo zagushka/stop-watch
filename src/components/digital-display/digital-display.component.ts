@@ -47,7 +47,7 @@ export class DigitalDisplayComponent implements OnInit, OnDestroy {
       )
       .subscribe((time) => {
         [this.hours, this.minutes, this.seconds] = time.toFormat('hh mm ss').split(' ');
-        this.blink = !(this.seconds % 2); // Blink every tick
+        this.blink = !(Math.floor(time.as('seconds')) % 2); // Blink on every odd second
         this.ref.markForCheck();
       });
   }
