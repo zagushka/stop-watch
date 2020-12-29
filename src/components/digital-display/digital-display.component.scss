@@ -1,0 +1,25 @@
+.container {
+  background: black;
+}
+.huge-digital {
+  display: inline-block;
+  font-size: xxx-large;
+  font-family: 'digital', 'arial', sans-serif;
+  border: 1px solid black;
+  position: relative;
+  color: chartreuse;
+  z-index: 1;
+
+  &:after {
+    content: '88:88.88';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: darkolivegreen;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

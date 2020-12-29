@@ -13,7 +13,6 @@ export interface Clock {
   duration?: Duration;
   time?: DateTime;
   status: ClockStatus;
-
 }
 
 interface StopWatchData {
